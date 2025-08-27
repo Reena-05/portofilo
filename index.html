@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaik Reena Kowsar - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Shaik Reena Kowsar</h1>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h2>Hello, I'm <span class="highlight">Shaik Reena Kowsar</span></h2>
+            <p><span id="typing"></span></p>
+            <a href="#contact" class="btn">Hire Me</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" data-aos="fade-right">
+        <h2>About Me</h2>
+        <p>I am a passionate Computer Science and Engineering student specializing in Artificial Intelligence and
+            Machine Learning at Bapatla Engineering College.
+            I have experience in web development, programming, and building AI/ML models.
+            I am seeking opportunities to contribute my skills and grow as a professional.</p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" data-aos="fade-left">
+        <h2>Skills</h2>
+        <div class="skill">
+            <p>Python / Java / SQL</p>
+            <div class="progress">
+                <div class="progress-bar" style="width: 90%"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <p>HTML / CSS / JavaScript</p>
+            <div class="progress">
+                <div class="progress-bar" style="width: 80%"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <p>AI & Machine Learning (Scikit-learn, Pandas, NumPy)</p>
+            <div class="progress">
+                <div class="progress-bar" style="width: 75%"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" data-aos="zoom-in">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>To-Do List Application</h3>
+            <p>Interactive web app to add, complete, and delete daily tasks.</p>
+            <a href="https://reena-05.github.io/todo-list1/" target="_blank">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Web Resume Generator</h3>
+            <p>A resume generator built using HTML, CSS, and JavaScript.</p>
+            <a href="https://reena-05.github.io/Resume-Generator/" target="_blank">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Employee Salary Prediction</h3>
+            <p>Machine learning model to predict employee salaries based on experience and skills.</p>
+            <a href="https://github.com/Reena-05/Employee_Salary_prediction" target="_blank">View Project</a>
+        </div>
+
+        </div>
+
+        <div class="project">
+            <h3>Weather App</h3>
+            <p>A Weather App provides real-time weather updates and forecasts for any location.
+                It helps users details like temperature, humidity, wind speed, and alerts..</p>
+            <a href="https://github.com/Reena-05/Weather-App" target="_blank">View Project</a>
+
+        </div>
+        <div class="project">
+            <h3>Placeholder Project 2</h3>
+            <p>A project description goes here (replace later).</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" data-aos="fade-up">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:reenakowsar05@gmail.com">reenakowsar05@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/shaik-reena-kowsar-37ba33294" target="_blank">View Profile</a>
+        </p>
+        <p>Github: <a href="https://github.com/Reena-05" target="_blank">View Profile</a></p>
+
+        <form id="contact-form">
+            <input type="text" name="user_name" placeholder="Your Name" required>
+            <input type="email" name="user_email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("A-ivwWsx5mZU2edSm"); // Replace with your EmailJS User ID
+        })();
+    </script>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Shaik Reena Kowsar. All rights reserved.</p>
+    </footer>
+
+    <!-- Buttons -->
+    <button id="backToTop">↑ Top</button>
+    <button id="themeToggle">Toggle Theme</button>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+
+</html>
